@@ -102,4 +102,15 @@ img:hover {
         border-radius: 0;
         height: 100%;
     }
+
+    .player,
+    .feedback,
+    .opponent {
+        height: 22%;
+    }
+
+    .high-score {
+        height: 50px;
+        align-items: center;
+    }
 }
