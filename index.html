@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<main>
+    <div class="high-score">
+        <p>Highscore: <span id="highScoreId">0</span></p>
+    </div>
+    <div class="player">
+        <img id="playerRockId" data-step="pick" src="images/stone.png" onclick="checkPick('rock')">
+        <img id="playerPaperId" data-step="pick" src="images/old-paper.png" onclick="checkPick('paper')">
+        <img id="playerScissorsId" data-step="pick" src="images/scissors.png" onclick="checkPick('scissors')">
+    </div>
+    <div class="feedback">
+        <p id="pickTextId" class="pick-text">Pick something</p>
+        <p id="resultTextId" class="result-text"></p>
+        <p id="scoreTextId" class="score-text">Score: <span id="scoreId"></span></p>
+        <p id="playAgainId" class="play-again-text" onclick="playAgain()">Play again</p>
+
+    </div>
+    <div class="opponent">
+        <div id="opponentWaitingId" class="opponent-waiting">Waiting..</div>
+        <div class="opponent-selection">
+            <img id="opponentRockId" src="images/stone.png">
+            <img id="opponentPaperId" src="images/old-paper.png">
+            <img id="opponentScissorsId" src="images/scissors.png">
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
